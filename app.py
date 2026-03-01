@@ -4,7 +4,9 @@ def greet(name):
 
 
 def divide(a, b):
-    """Divide a by b."""
+    """Divide a by b. Returns None if divisor is zero."""
+    if b == 0:
+        return None
     return a / b
 
 
