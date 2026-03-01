@@ -21,6 +21,7 @@ def find_max(numbers):
 
 def is_palindrome(s):
     """Check if a string is a palindrome."""
+    s = s.lower()
     return s == s[::-1]
 
 
