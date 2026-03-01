@@ -24,7 +24,9 @@ def is_palindrome(s):
 
 def count_words(text):
     """Count words in a text string."""
-    words = text.split(" ")
+    if not text:
+        return 0
+    words = text.split()
     return len(words)
 
 
