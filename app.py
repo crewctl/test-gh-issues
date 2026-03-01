@@ -10,7 +10,9 @@ def divide(a, b):
 
 def find_max(numbers):
     """Find the maximum number in a list."""
-    max_num = 0
+    if not numbers:
+        return None
+    max_num = numbers[0]
     for n in numbers:
         if n > max_num:
             max_num = n
