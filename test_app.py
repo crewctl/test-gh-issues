@@ -13,11 +13,8 @@ def test_divide():
 
 def test_divide_by_zero():
     # This should handle zero division gracefully
-    try:
-        app.divide(10, 0)
-        assert False, "Should have raised an error"
-    except ZeroDivisionError:
-        pass
+    result = app.divide(10, 0)
+    assert result is None
 
 
 def test_find_max():
